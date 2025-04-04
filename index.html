@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Start File | The Front End Developer</title>
+    <meta name="description" content="Ivett Owens Smaple Start File with SCSS">
+    <meta name="author" content="Ivett Owens">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+
+
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo-1.png" alt="logo" width="70" height="28" srcset="images/logo-1.png 1x,images/logo-2.png 2x,images/logo-3.png 3x"> 
+            <span>Evergreen Design</span>
+            <button id="theButton"></button>
+        </header>
+    </div>
+    <div id="navWrapper">
+        <nav>
+            <ul id="theNav">
+                <li class="active"><a href="#">Services</a></li>
+                <li class="parent"><a href="#">Clients</a>
+                    <ul>
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                        <li><a href="#">Sub 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="parent"><a href="#">Locations</a>
+                    <ul>
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                        <li><a href="#">Sub 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Services</h1>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/landscaping1-small.webp" srcset="images/landscaping1-small1.webp 1x, images/landscaping1-medium1.webp 2x, images/landscaping1-large1.webp 3x"></div>
+                    <div class="swiper-slide"><img src="images/landscaping2-small.webp" srcset="images/landscaping2-small2.webp 1x, images/landscaping2-medium2.webp 2x, images/landscaping2-large2.webp 3x"></div>
+                    <div class="swiper-slide"><img src="images/landscaping3-small.webp" srcset="images/landscaping3-small3.webp 1x, images/landscaping3-medium3.webp 2x, images/landscaping3-large3.webp 3x"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="cards">
+                <section>
+                    <h2>Garden Renovation</h2>
+                    <img src="images/pic-1landscaping.webp" width="400" height="250" alt="Garden Renovation">
+                    <img src="images/mask-2.png" width="400" height="64" alt="mask">
+                </section>
+                <section>
+                    <h2>Garden Maintenance</h2>
+                    <img src="images/pic-2landscaping.webp" width="400" height="250" alt="Garden Maintenance">
+                    <img src="images/mask-new1.png" width="400" height="43" alt="mask">
+                </section>
+                <section>
+                    <h2>Fence Repair</h2>
+                    <img src="images/pic-3landscaping.webp" width="400" height="250" alt="Fence Repair">
+                    <img src="images/mask-new-2.svg" width="400" height="40" alt="mask">
+                </section>
+                <section>
+                    <h2>Garden Design</h2>
+                    <img src="images/pic-4landscaping.webp" width="400" height="250" alt="Garden Design">
+                    <img src="images/mask-new-2.svg" width="400" height="40" alt="mask">
+                </section>
+            </div>
+
+            <div class="testimonials">
+                <section>
+                    <img src="images/person-1.jpg" width="736" height="1104" alt="customer testimonial">
+                    <p>I am so pleased with the work that Evergreen Design Company did in my garden. As an older woman, 
+                        I find it difficult to keep up with maintaining my yard, but their team came in and completely transformed it into a beautiful,
+                         peaceful space. The flowers are vibrant, the lawn is lush, and the attention to detail is simply stunning. They were professional, 
+                         respectful, and truly listened to what I wanted. It is such a relief knowing that my garden looks wonderful 
+                         and that I no longer have to worry about it. 
+                        I can not thank them enough for making my yard a place of beauty again.</p>
+                </section>
+                <section>
+                    <img src="images/person-2.jpg" width="736" height="1102" alt="customer testimonial">
+                    <p>I recently had the leasure of working with Evergreen Design company while I was away on a trip, 
+                        and I couldn't be more thrilled with the results! The team transformed my yard into a beautiful garden paradise.
+                         I came home to vibrant flowers, perfectly manicured lawns, and thoughtfully arranged landscaping that completely
+                          exceeded my expectations.
+                          They paid great attention to detail and ensured everything was perfect, from the plant choices to the layout.
+                           It was such a relief to know that my yard was in good hands, and I can not recommend their services enough 
+                           to anyone looking for quality landscaping. 
+                        It is clear they genuinely care about their work, and I am so happy with how everything turned out.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="year">x</span> &bull; Ivett Owens</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

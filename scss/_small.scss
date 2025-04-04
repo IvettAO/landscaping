@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $FontColor;
+}
+#headerWrapper {
+  background-color: $TertiaryColor;
+  color: $PrimaryColor;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto 44px;
+  column-gap: $gutter;
+  align-items: center;
+  padding: .5rem $gutter;
+  span {
+    font-size: 1.6rem;
+    font-weight: $normalWeight;
+    color: $PrimaryColor;
+  }
+}
+
+#navWrapper {
+  background-color: $PrimaryColor;
+}
+
+main h1 {
+  padding: 7px;
+}
+
+.swiper, .swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.cards {
+  display: grid;
+  gap: 7px;
+  padding: 7px;
+
+  section {
+    position: relative;
+    h2 {
+
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    img:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  section {
+    padding: 7px;
+    img {
+      width: 100%;
+      height: auto;
+      clip-path: circle(50% at 50% 50%);
+      transition: transform 1s;
+      &:hover {
+        transform: rotate(15deg);
+      }
+    }
+    p {
+      color: $PrimaryColor;
+    }
+  }
+}
+
+// begin the footer
+#footerWrapper {
+  background-color: $PrimaryColor;
+}
+footer {
+  padding: 0.5rem $gutter;
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+    color: $TertiaryColor;
+  }
+}
